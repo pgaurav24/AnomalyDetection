@@ -225,8 +225,8 @@ def _get_data_tuple(raw_data, period_override, resampling=False):
     elif timediff.seconds / 60 >= 1:
         granularity = 'min'
         period = _get_period(1440, period_override)
-    elif timediff.seconds > 0:
-        granularity = 'sec'
+    #elif timediff.seconds > 0:
+    #    granularity = 'sec'
     elif timediff.seconds > 0:
         granularity = 'sec'
         
